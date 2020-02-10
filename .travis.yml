@@ -11,6 +11,7 @@ language: generic
 
 deploy:
   #instructions for deploying successfully tested code to aws
+  edge: true
   provider: elasticbeanstalk
 
 	#in ebs copy url http://docker-env.dyunjqy4px.us-west-2.elasticbeanstalk.com/, and paste in region
@@ -26,4 +27,4 @@ deploy:
 #api keys 
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: 
-    secure: "$AWS_SECRET_KEY"
+    secure: $AWS_SECRET_KEY
